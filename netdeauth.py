@@ -22,4 +22,12 @@ if __name__=="__main__":
     parser.add_argument("-i", dest="iface", help="interface to use, must be in monitor mode, default is 'wlan0mon'", default=wlan0mon)
     parser.add_argument("-V", "--verbose", help="whether to print messages", action="store_true")
 
+    args = parser.parse_args()
+    target = args.target
+    gateway = args.gateway
+    count = int(args.count)
+    interval = float(args.interval)
+    iface = args.iface
+    verbose = args.verbose
+
     
