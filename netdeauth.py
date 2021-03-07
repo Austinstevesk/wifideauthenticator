@@ -37,3 +37,12 @@ if __name__=="__main__":
     else:
         loop = 0
 
+
+    #Print some info messages
+    if verbose:
+        if count:
+            print(f"[+] Sending {count} frames every {interval}s...")
+        else:
+            print(f"[+] Sending frames every {interval}s for ever ...")
+
+    deauth(target)
