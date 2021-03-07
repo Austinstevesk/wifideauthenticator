@@ -30,4 +30,10 @@ if __name__=="__main__":
     iface = args.iface
     verbose = args.verbose
 
-    
+    if count==0:
+        #loop forever unless interrupted
+        loop = 1
+        count = None
+    else:
+        loop = 0
+
