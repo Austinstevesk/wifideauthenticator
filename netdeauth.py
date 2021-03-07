@@ -45,4 +45,4 @@ if __name__=="__main__":
         else:
             print(f"[+] Sending frames every {interval}s for ever ...")
 
-    deauth(target, interval)
+    deauth(target, interval, count, loop, iface)
