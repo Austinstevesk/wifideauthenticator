@@ -19,7 +19,7 @@ if __name__=="__main__":
     parser.add_argument("gateway", help="Gateway MAC address that target is authenticated with")
     parser.add_argument("-c", "--count", help="No of deauthentication frames to send, specify 0 to keep sending infinitely, default is 0", default=0)
     parser.add_argument("--interval", help="The sending frequency between 2 frames sent, default is 100ms", default=0.1)
-    parser.add_argument("-i", dest="iface", help="interface to use, must be in monitor mode, default is 'wlan0mon'", default=wlan0mon)
+    parser.add_argument("-i", dest="iface", help="interface to use, must be in monitor mode, default is 'wlan0mon'", default=wlan0mon)#wlo1mon in some cases
     parser.add_argument("-V", "--verbose", help="whether to print messages", action="store_true")
 
     args = parser.parse_args()
