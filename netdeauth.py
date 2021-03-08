@@ -14,7 +14,7 @@ def deauth(target_mac, gateway_mac, inter=0.1, loop=1, iface ="wlan0mon", verbos
 
 if __name__=="__main__":
     import argparse
-    parser = argparse.ArgumentParser(description="A python script for sending deauthentication frames")
+    parser = argparse.ArgumentParser(description="A python script for sending deauthentication frames") #Instantiate the class ArgumentParser
     parser.add_argument("target", help="Target MAC address to deauthenticate")
     parser.add_argument("gateway", help="Gateway MAC address that target is authenticated with")
     parser.add_argument("-c", "--count", help="No of deauthentication frames to send, specify 0 to keep sending infinitely, default is 0", default=0)
