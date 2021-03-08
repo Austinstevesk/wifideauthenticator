@@ -1,6 +1,6 @@
 from scapy.all import *
 
-def deauth(target_mac, gateway_mac, inter=0.1, loop=1, iface ="wlan0mon", verbose=1):
+def deauth(target_mac, gateway_mac, inter=0.1, loop=1, iface ="wlan0mon", verbose=1): #Call to deauthenticate
     #802.11 frame
     #addr1: destination MAC
     #addr2: source MAC
